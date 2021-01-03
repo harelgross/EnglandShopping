@@ -1,0 +1,58 @@
+$flagRed: #CF142B;
+$flagBlue: #00247D;
+
+$theme-colors: (
+    "secondary": $flagRed
+);
+
+$carousel-control-color: $flagBlue;
+$carousel-control-opacity: 1;
+$carousel-indicator-active-bg: $flagRed;
+$carousel-caption-color: $flagRed;
+
+
+
+.card-img-top {
+    height: 100%;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+
+.card-img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: opacity 0.3s;
+
+}
+
+.card-img-overlay:hover {
+    opacity: 1;
+}
+
+.card-text {
+    color: $flagBlue;
+}
+
+.accordion-item {
+    width: 100%;
+    .accordion-header {
+        height: 100%;
+    }
+}
+
+.table {
+    direction: rtl;
+
+    .td {
+        color: whitesmoke;
+    }
+}
+
+@import "../bootstrap/scss/bootstrap.scss"

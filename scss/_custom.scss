@@ -1,0 +1,67 @@
+@import "_custom_defs";
+  
+* {
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    background-color: $flagBlue;
+    color: white;
+    font-family: "Heebo";
+}
+
+.sales-carousel {
+    height: 300px;
+    width: 100%;
+    max-width: 300px;
+
+    .carousel-inner {
+        img {
+            height: 100%;
+            width: 100%
+        }
+    }
+    .carousel-caption-link {
+        background-color: none;
+        text-decoration: none;
+        color: $flagRed;
+        transition: background-color 0.2s ease-out;
+        :hover  {
+            text-decoration: none;
+            background-color: rgba(128, 128, 128, 0.5);
+        }
+    }
+
+}
+
+hr.style-five {
+  border: 0;
+  height: 0; /* Firefox... */
+  box-shadow: 0 0 10px 1px black;
+
+  :after {  /* Not really supposed to work, but does */
+    content: "\00a0";  /* Prevent margin collapse */
+  }
+}
+
+.chain-card {
+    height: 150px;
+    width: 18rem;
+}
+
+.contact-card a {
+    text-decoration: none;
+    :hover {
+        text-decoration: none;
+    }
+}
+
+#price-table{
+  border: white 5px solid;
+}
