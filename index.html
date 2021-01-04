@@ -221,7 +221,7 @@
     <section id="prices">
         <div class="container text-center my-2">
             <h2 class="h2">כמה זה עולה?</h2>
-            <table id="price-table" class="table bg-secondary">
+            <table class="table price-table bg-secondary d-none d-md-table">
                 <thead>
                     <tr>
                         <th scope="col"></th>
@@ -249,6 +249,43 @@
                         <td class="text-center">80&pound</td>
                         <td class="text-center">50&pound</td>
                         <td class="text-center">50&pound</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table price-table bg-secondary d-table d-md-none">
+                <thead>
+                    <tr>
+                        <th scope="col"></th>
+                        <th class="text-center" scope="col">
+                            עד 2 ק"ג
+                        </th>
+                        <th class="text-center" scope="col">
+                            מעל 2 ק"ג
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th class="text-center" scope="row">                            
+                            <img src="./assets/images/shippingLogos/dhl.png" alt="dhl" class="img-fluid">
+                        </th>
+                        <td class="text-center align-middle">50&pound</td>
+                        <td class="text-center align-middle">80&pound</td>
+                    </tr>
+                    <tr>
+                        <th class="text-center" scope="row">
+                            <img src="./assets/images/shippingLogos/fedex.png" class="img-fluid" style="background-color: white"
+                                alt="fedex">
+                        </th>
+                        <td class="text-center align-middle">35&pound</td>
+                        <td class="text-center align-middle">50&pound</td>
+                    </tr>
+                    <tr>
+                        <th class="text-center" scope="row">
+                            <img src="./assets/images/shippingLogos/royalMail.png" class="img-fluid" alt="royal mail">
+                        </th>
+                        <td class="text-center align-middle">25&pound</td>
+                        <td class="text-center align-middle">50&pound</td>
                     </tr>
                 </tbody>
             </table>
